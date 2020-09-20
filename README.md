@@ -44,7 +44,7 @@ Usage example:
 * You can use multiple arguments (or even arrays of values) in one case() call. The first matching value starts execution (and a possible fall-through).
 * Most blocks will be terminated by „last“, „return“, „goto“ or similar statement; if not, the execution will fall through to the next case. Just like in C.
 * The default() method is an exception − it only switches the fall-through flag, so the „default“ block will be executed, only when no comparison in any case() call has succeeded yet.
-* The case() method could be called with no arguments to test if a fall-through has been activated.
+* The case() method can be called with no arguments to test if a fall-through has been activated.
 * Switch-object could be easily reused.
 * You can place the „default“ case in the middle of the switch by using „goto“, but the call to default() method must stay at the end.
 
